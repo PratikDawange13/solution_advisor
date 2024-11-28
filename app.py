@@ -54,7 +54,7 @@ if st.button("Submit"):
         # Connect to the endpoint
         try:
             response = requests.post(
-                "https://visaroadmap-pipeline-pratik1-1001.fly.dev",
+                "https://visaroadmap-pipeline-pratik1-1001.fly.dev/generate_roadmap",
                 json=payload
             )
             response.raise_for_status()
